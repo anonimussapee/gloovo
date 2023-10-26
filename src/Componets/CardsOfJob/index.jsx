@@ -1,8 +1,46 @@
+// import '../../functions/observer.js';
+import { useNavigate} from 'react-router-dom';
 import './index.css';
 
+let isNavigating = false;
+
 const CardOfJob = ({data}) =>{
+
+  const navigate = useNavigate();
+  
+  function visibilityObserve (entries, observer){
+    let entry = entries[0];
+    if(entry.isIntersecting){
+      if(!isNavigating ){
+        navigate(`/empleo?${entries[0].target.id}`);
+        isNavigating = true;
+      }else if(isNavigating ){
+        isNavigating= false;
+
+      }
+
+    }
+  }
+  let observer = new IntersectionObserver(visibilityObserve,{
+    root: window.document.getElementById(`container-job`),
+    rootMargin: "20px",
+    threshold: 0.8
+  });
+  
+  setTimeout(() => {
+    
+    const elementToObserve = document.getElementById(data.id);
+    if (elementToObserve) {
+      observer.observe(elementToObserve);
+    } else {
+      console.error(`Element with ID "${data.id}" not found.`);
+    }
+    
+  }, 0);
+  
+  
   return (
-    <article className='CardOfJob flex flex-col gap-6  items-center'>
+    <article className='CardOfJob flex flex-col gap-6  items-center' id={data.id} >
       <figure>
         <img src={data?.urlImage} alt={data?.title} className='w-[90vw] h-[30vh] rounded-lg jobImagebox ' />
       </figure>

@@ -7,7 +7,9 @@ const routerList = [
   {path:'/home' , element:<HomePage/>, private:false},
   {path:'/inicio' , element:<HomePage/>, private:false},
   {path:'/empleo' , element:<JobsPage/>, private:false},
+  {path:'/empleo?:id' , element:<JobsPage/>, private:false},
   {path:'/job' , element:<JobsPage/>, private:false},
+  {path:'/job?:id' , element:<JobsPage/>, private:false},
   {path:'/*' , element:<p>404 not found</p>, private:false},
 
 ];
@@ -18,10 +20,10 @@ const navList = [
 ];
 
 const jobList = [
-  {title: 'Atención al cliente', urlImage : 'https://images.pexels.com/photos/6567436/pexels-photo-6567436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', address: 'https://maps.app.goo.gl/fX1dCRjJUk1VbRw38'},
-  {title: 'Atención al cliente', urlImage : 'https://images.pexels.com/photos/6567436/pexels-photo-6567436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', address: 'https://maps.app.goo.gl/fX1dCRjJUk1VbRw38'},
-  {title: 'Atención al cliente', urlImage : 'https://images.pexels.com/photos/6567436/pexels-photo-6567436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', address: 'https://maps.app.goo.gl/fX1dCRjJUk1VbRw38'},
-  {title: 'Atención al cliente', urlImage : 'https://images.pexels.com/photos/6567436/pexels-photo-6567436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', address: 'https://maps.app.goo.gl/fX1dCRjJUk1VbRw38'},
+  {id: 'tryueuie' , title: 'Atención al cliente', urlImage : 'https://images.pexels.com/photos/6567436/pexels-photo-6567436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', address: 'https://maps.app.goo.gl/fX1dCRjJUk1VbRw38'},
+  {id: 'chvdhbds', title: 'Atención al cliente', urlImage : 'https://images.pexels.com/photos/6567436/pexels-photo-6567436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', address: 'https://maps.app.goo.gl/fX1dCRjJUk1VbRw38'},
+  {id: 'pqpwoeoe', title: 'Atención al cliente', urlImage : 'https://images.pexels.com/photos/6567436/pexels-photo-6567436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', address: 'https://maps.app.goo.gl/fX1dCRjJUk1VbRw38'},
+  {id: 'sdhhdjdj', title: 'Atención al cliente', urlImage : 'https://images.pexels.com/photos/6567436/pexels-photo-6567436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', address: 'https://maps.app.goo.gl/fX1dCRjJUk1VbRw38'},
 
 ];
 
