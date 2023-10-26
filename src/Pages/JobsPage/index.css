@@ -1,0 +1,15 @@
+html {
+  scroll-snap-align: y mandatory;
+}
+.container-job{
+  position: relative; 
+  height: 90vh;
+  width: 100%;
+  overflow: scroll;
+  scrollbar-width: none;
+  scroll-snap-type: y mandatory;
+}
+
+.container-job::-webkit-scrollbar{
+  display: none;
+}
