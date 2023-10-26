@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {},
     screens : {
-      smMax : {'max' : '600px'}
+      smMax : {'max' : '600px'},
+      smXMax : {'max': '750px'}
     }
   },
   plugins: [],

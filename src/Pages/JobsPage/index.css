@@ -6,10 +6,17 @@ html {
   height: 90vh;
   width: 100%;
   overflow: scroll;
+  max-width: 700px;
   scrollbar-width: none;
   scroll-snap-type: y mandatory;
 }
 
 .container-job::-webkit-scrollbar{
   display: none;
+}
+
+.container-comment{
+  position: relative;
+  height: 90vh;
+  width: 50%;
 }

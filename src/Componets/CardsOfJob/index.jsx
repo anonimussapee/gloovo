@@ -73,4 +73,13 @@ const CardOfJob = ({data}) =>{
   );
 }
 
-export {CardOfJob};
+const CardOfCommentary = () =>{
+  return (
+    <article className='CardOfCommentary '>
+      <div className='flex'>Comentarios</div>
+    </article>
+  );
+}
+
+
+export {CardOfJob, CardOfCommentary};
