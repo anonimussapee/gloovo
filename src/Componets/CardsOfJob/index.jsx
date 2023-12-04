@@ -12,7 +12,7 @@ const CardOfJob = ({data}) =>{
     let entry = entries[0];
     if(entry.isIntersecting){
       if(!isNavigating ){
-        navigate(`/empleo?${entries[0].target.id}`);
+        navigate(`/ofertas?${entries[0].target.id}`);
         isNavigating = true;
       }else if(isNavigating ){
         isNavigating= false;

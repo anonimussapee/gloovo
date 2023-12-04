@@ -1,6 +1,6 @@
 :root{
-  --coolors-cyan : #2274A5; 
-  --coolors-dark-blue : #131B23;
+  --coolors-cyan : #3597cf; 
+  --coolors-cyan-dark : #2274A5;
 }
 *,*::before,*::after{
   padding: 0;

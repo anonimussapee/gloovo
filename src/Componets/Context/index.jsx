@@ -6,8 +6,8 @@ const routerList = [
   {path:'/' , element:<HomePage/>, private:false},
   {path:'/home' , element:<HomePage/>, private:false},
   {path:'/inicio' , element:<HomePage/>, private:false},
-  {path:'/empleo' , element:<JobsPage/>, private:false},
-  {path:'/empleo?:id' , element:<JobsPage/>, private:false},
+  {path:'/ofertas' , element:<JobsPage/>, private:false},
+  {path:'/ofertas?:id' , element:<JobsPage/>, private:false},
   {path:'/job' , element:<JobsPage/>, private:false},
   {path:'/job?:id' , element:<JobsPage/>, private:false},
   {path:'/*' , element:<p>404 not found</p>, private:false},
@@ -16,7 +16,7 @@ const routerList = [
 
 const navList = [
   {path:'/', name: 'Inicio', },
-  {path:'/empleo',name:'Ofertas' } ,
+  {path:'/ofertas',name:'Ofertas' } ,
 ];
 
 const jobList = [
